@@ -8,9 +8,9 @@ using Microsoft.Azure.WebJobs.Host;
 
 namespace fedamaFunction
 {
-    public static class Function1
+    public static class function
     {
-        [FunctionName("Function1")]
+        [FunctionName("function")]
         public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)]HttpRequestMessage req, TraceWriter log)
         {
             log.Info("C# HTTP trigger function processed a request.");
